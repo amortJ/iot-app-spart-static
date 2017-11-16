@@ -1,0 +1,8 @@
+base: cloudius/osv-openjdk
+
+cmdline: /java.so -jar /iot-app-spark-static-1.0-SNAPSHOT.jar
+
+build: mvn package
+
+files:
+  /iot-app-spark-static-1.0-SNAPSHOT.jar: target/iot-app-spark-static-1.0-SNAPSHOT.jar
