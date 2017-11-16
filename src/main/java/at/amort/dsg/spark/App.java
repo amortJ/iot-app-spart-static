@@ -12,6 +12,6 @@ public class App
     {
         System.out.println( "IoT measurement" );
 
-        get("/average", (req, res) -> "{ \"average\": 42.1 }");
+        get("/average", (req, res) -> { res.type("application/json"); return "{ \"average\": 42.1 }";});
     }
 }
